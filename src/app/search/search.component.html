@@ -1,0 +1,47 @@
+<div class="search" [ngClass]="{'search--active': isActive}">
+  <button type="button" class="search__button" (click)="setIsActive(true)">
+    <div class="search__icon search__icon--magnifier" >
+      <svg
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path
+          fill="#263238"
+          fill-opacity=".3"
+          d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z"
+        ></path>
+      </svg>
+    </div>
+    <div class="search__icon search__icon--arrow">
+      <svg
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path
+          fill="#4FC3F7"
+          d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z"
+        ></path>
+      </svg>
+    </div>
+  </button>
+  <label class="search__label" for="search">
+    <input
+      id="search"
+      name="search"
+      type="text"
+      class="search__label-input"
+      data-tab="2"
+      dir="auto"
+      title="Procurar ou começar uma nova conversa"
+      value=""
+      (click)="setIsActive(true)"
+      (blur)="setIsActive(false)"
+    />
+  </label>
+</div>

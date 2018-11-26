@@ -1,0 +1,20 @@
+<div class="conversation-list">
+  <div
+    class="conversation-list__item"
+    *ngFor="let conversation of conversationList"
+  >
+    <div class="conversation-list__profile-picture">
+      <img [src]="conversation.picture" />
+    </div>
+    <div>
+      <div class="conversation-list__contact-detail">
+        {{
+          conversation.isGroup
+            ? conversation.groupName
+            : conversation.contactName
+        }}
+      </div>
+      <div class="conversation-list__last-message">{{ conversation.lastMessage }}</div>
+    </div>
+  </div>
+</div>

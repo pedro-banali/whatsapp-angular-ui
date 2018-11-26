@@ -1,0 +1,55 @@
+@import "../../../assets/mixins.scss";
+
+.conversation-list {
+  &__item {
+    cursor: pointer;
+    border-top: 1px solid #f2f2f2;
+    @include flex-row();
+    height: 4em;
+    align-items: center;
+    &:hover {
+      background: {
+        color: #e9ebeb;
+      }
+    }
+    &:last-child {
+      border: {
+        bottom: {
+          width: 1px;
+          style: solid;
+          color: #f2f2f2;
+        }
+      }
+    }
+  }
+
+  &__profile-picture {
+    padding: {
+      left: 1em;
+      right: 1em;
+    }
+    img {
+      width: 3em;
+      height: 3em;
+      border: {
+        radius: 50%;
+      }
+    }
+  }
+
+  &__contact-detail {
+    font: {
+      size: 17px;
+    }
+  }
+
+  &__last-message {
+    font: {
+      size: 14px;
+    }
+    color: #454545;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+

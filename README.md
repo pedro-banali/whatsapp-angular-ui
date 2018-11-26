@@ -1,6 +1,13 @@
 # whatsapp-angular-ui
 This project is just to create an ui with the same experience as the original whatsapp
 
+The objective is to:
+ - Build an portfolio
+ - Practice Angular 
+ - Practice Typescript
+ - Practice Scss
+ - Practice Unit testing and e2e testing
+
 # Whatsapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
